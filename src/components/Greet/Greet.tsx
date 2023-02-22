@@ -1,3 +1,5 @@
+import Heading from "components/Heading/Heading";
+
 type GreetProps = {
   name: string;
 };
@@ -5,8 +7,8 @@ type GreetProps = {
 function Greet({ name }: GreetProps) {
   return (
     <div className="greet">
-      <h3>Welcome {name}</h3>
-      <h4>Welcome to the todo list feature.</h4>
+      <Heading>{`Welcome ${name}`}</Heading>
+      <Heading>Welcome to the todo list feature</Heading>
     </div>
   );
 }
